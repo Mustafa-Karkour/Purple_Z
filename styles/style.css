@@ -1,0 +1,155 @@
+/*Common Style for all cards*/
+
+body {
+  background: #d3d3d3;
+}
+
+#cartCount {
+  text-align: center;
+  padding: 0 0.9rem 0.1rem 0.9rem;
+  border-radius: 3rem;
+}
+
+.shopping-cart-section {
+  margin-top: 100px !important;
+}
+
+#cart-section-1 {
+  border-radius: 10px 0 0 10px;
+}
+
+#cart-section-2 {
+  border-radius: 0 10px 10px 0;
+}
+
+.card {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s;
+}
+
+.apple-desc,
+.samsung-desc,
+.green-watch-desc {
+  font-size: 13px;
+  color: #57595d;
+}
+
+.info {
+  line-height: 17px;
+}
+
+.star {
+  color: #fbc02d;
+}
+
+/*Card 1*/
+.apple-watch-cost span {
+  /* color: #286783; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* .apple-watch-cart{
+    background: #286783;
+} */
+
+/*Card 2*/
+.samsung-watch-cost span {
+  /* color: #fb3531; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* .samsung-watch-cart{
+    background: #dc3545;
+} */
+
+/*Card 3*/
+.green-watch-cost span {
+  /* color:#00a652; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* .green-watch-cart{
+    background-color: #00a652;
+} */
+
+input.cart-qty {
+  width: 35%;
+}
+
+.removeBtn {
+  margin-bottom: 5px;
+}
+
+/*Common Style for all cards again*/
+
+.apple-watch-cart:hover,
+.samsung-watch-cart:hover,
+.green-watch-cart:hover {
+  opacity: 0.9;
+}
+
+.cursor {
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*to Top style*/
+
+.to-top {
+  padding: 5px;
+  background-color: #000;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0; /*hidden*/
+  pointer-events: none; /*cant click it*/
+  transition: all 0.4s;
+}
+/*a tag has .top-top and .active*/
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.pice-details {
+  padding: 3% 2%;
+}
+
+/* for the invoice page */
+#Z{
+    background-image: linear-gradient(to right, #1900d0 , #d90093);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+
+.invoice-greed{
+  margin-top: 72px;
+}
