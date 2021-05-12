@@ -80,7 +80,7 @@
     <!--Website Icon-->
     <link
       rel="shortcut icon"
-      href="./images/zipper-icon.png"
+      href="../images/zipper-icon.png"
       type="image/x-icon"
     />
   </head>
