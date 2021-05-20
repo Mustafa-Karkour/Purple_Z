@@ -2,19 +2,61 @@
 
 session_start();
 
-$t_date = $_COOKIE["t_date"];
-$p_email = $_COOKIE["p_email"];
+require_once("./infos/CustomerInfo.php");
+require_once("./infos/AddressInfo.php");
+require_once("./infos/OrderInfo.php");
+require_once("./infos/InvoiceInfo.php");
+
+/** CUSTOMERINFO CLASS Section Starts */
+$p_email = $_COOKIE["p_email"]; //the email is unquie
 $f_name = $_COOKIE["f_name"];
 $l_name = $_COOKIE["l_name"];
+
+$customerInfo = new CustomerInfo($p_email,$f_name,$l_name);
+if(!$customerInfo->customerAvailability()){
+  //new customer
+  $customerInfo->insertCustomerInfo(); 
+
+  /** ADDRESSINFO CLASS Section Starts*/
+  //---------------------------
+  $address_line = $_COOKIE["address_line"];
+  $address_area = $_COOKIE["address_area"];
+  $country_code = $_COOKIE["country_code"];
+  $postal_code = $_COOKIE["postal_code"]; 
+  //---------------------------
+  $addressInfo = new AddressInfo("Salmiya","HolidyInn","KW",2022);
+  $addressInfo->insertAddressInfo($customerInfo->cus_email); 
+  
+  /** ADDRESSINFO CLASS Section Ends*/
+} 
+
+/** CUSTOMERINFO CLASS Section Ends */
+
+/**NOT A NEW CUSTOMER*/
+/** ORDERINFO CLASS Section Starts*/
+//new order
+$orderInfo = new OrderInfo($customerInfo->cus_email);
+$orderInfo->insertOrderInfo();
+//new order line
+$cart_ids = explode("-",$_COOKIE["cart_ids"]); //----------------------------------
+$cart_qts = explode("-",$_COOKIE["cart_qts"]); //----------------------------------
+$orderInfo->insertOrderLineInfo($cart_ids,$cart_qts);
+/** ORDERINFO CLASS Section Ends*/
+
+/**INVOICEINFO CLASS Section Starts*/
+//insert into invoice info
+//order_id
 $a_value = $_COOKIE["a_value"];
 $a_currency = $_COOKIE["a_currency"];
-$address_line = $_COOKIE["address_line"];
-$address_area = $_COOKIE["address_area"];
-$country_code = $_COOKIE["country_code"];
-$postal_code = $_COOKIE["postal_code"];
+$t_date = $_COOKIE["t_date"];
 $status = $_COOKIE["status"];
 
+$invoiceInfo = new InvoiceInfo($a_value,$a_currency,$t_date,$status);
+$invoiceInfo->insertInvoiceInfo($orderInfo->getCurrentOrderID());
+/**INVOICEINFO CLASS Section Ends*/
 
+
+//clear out the shopping cart
 unset($_SESSION["myCart"]);
 
 ?>
@@ -160,16 +202,7 @@ unset($_SESSION["myCart"]);
       <?php echo $status; ?>
     </h3>
 
-    <!-- <h4>currDate/TransactionTime: 2021-05-05</h4>
-    <h4>First name: Jone</h4> <h4>Last name: Doe</h4>
-    <h4>payer email: test@example.com</h4>
-    <h4>Amount: 12.50</h4><h4>Currency code: USD</h4>
-
-    <h4>Address Line: Free Trade Zone</h4>
-    <h4>Admin area: Kuwait City</h4>
-    <h4>Postal Code: 14005</h4>
-    <h4>Country Code: KW</h4>
-    <h4>Status: Completed 'Green'</h4> -->
+    
 
     <!--Scrolling Up Starts-->
     <a href="#" class="to-top " >

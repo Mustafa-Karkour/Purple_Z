@@ -70,7 +70,6 @@ function displayProductCard($prodID,
 
 function cartProducts($productIMG,$productName,$productStars,$productPrice,$productID){
 
-
   $element = "<form action=\"cart.php?action=remove&id=$productID\" method=\"POST\" class=\"cart-items\">
 
                 <div>
@@ -81,6 +80,8 @@ function cartProducts($productIMG,$productName,$productStars,$productPrice,$prod
                         </div>
                         <div class=\"col-md-6\" style=\"background-color: #f8f1f2;\">
                             <h5 class=\"pt-2 text-dark\">$productName</h5>
+                            <input type=\"hidden\" class=\"cart-productID\" value=\"$productID\">
+
                             <small class=\"text-success\"><b>Ratings: $productStars</b></small>
                             <h5 class=\"prodPrice pt-2\">$productPrice USD</h5>
 

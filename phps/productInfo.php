@@ -3,22 +3,15 @@
 class ProductInfo{
 
 
-    public $serverName;
-    public $userName;
-    public $password;
-    public $dbName;
+    
     public $con;
 
-    public function __construct(
-        $serverName="localhost",
-        $userName="root",
-        $password="",
-        $dbName="Purple_Z"
-    ){
-        $this->serverName = $serverName;
-        $this->userName = $userName;
-        $this->password = $password;
-        $this->dbName = $dbName;
+    public function __construct(){
+        
+        $serverName="localhost";
+        $userName="root";
+        $password="";
+        $dbName="Purple_Z";
 
         //Create Connection
         $this->con = mysqli_connect($serverName,$userName,$password,$dbName);
