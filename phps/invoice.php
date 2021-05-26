@@ -59,6 +59,12 @@ $invoiceInfo->insertInvoiceInfo($orderInfo->getCurrentOrderID());
 //clear out the shopping cart
 unset($_SESSION["myCart"]);
 
+//Close the connection
+// mysqli_close($customerInfo->con);
+// mysqli_close($addressInfo->con);
+// mysqli_close($orderInfo->con);
+// mysqli_close($invoiceInfo->con);
+
 ?>
 
 

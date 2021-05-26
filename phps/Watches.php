@@ -121,6 +121,9 @@
             
 
           }
+
+          //Close the connection
+          // mysqli_close($productInfo->con);
         
         ?>
 

@@ -64,14 +64,12 @@
                 aria-labelledby="products-dropdown"
               >
                 <li>
-                  <a href="Watches.php" class="dropdown-item active">Watches</a>
+                  <a href="Watches.php" class="dropdown-item">Watches</a>
                 </li>
                 <li>
                   <a href="#" class="dropdown-item">Bages</a>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-item">Jackets</a>
-                </li>
+               
               </ul>
             </li>
             <li class="nav-item">
