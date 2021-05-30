@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 
-    <html lang="en">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -130,7 +124,7 @@ i{
 if(!$con){
     die("Connection failed". mysqli_connect_error());
 }
-    $qry= "SELECT * FROM product WHERE PROD_TYPE='Women'";
+    $qry= "SELECT * FROM product WHERE PROD_TYPE='Men'";
     $rst=mysqli_query($con,$qry);
     $rowNo=0;
 ?>
@@ -267,4 +261,3 @@ if(!$con){
   
 </footer>
         
-</html>

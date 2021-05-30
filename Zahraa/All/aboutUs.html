@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="Logo mini.png"/>
+	<title>
+		About Us | Purple Zipper
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<div class="header">
+		<div class="primaryg">
+			<div class="navbar" id="mynavbar">
+				<div class="logo">
+					<img src="logo.jpg" height="125px" alt="Purple zipper logo.">
+				</div>
+				<nav class="">
+					<div class="topnav" id="myTopnav">
+						<a href ="">Home</a>
+						<a href ="">Products</a>
+						<a href ="salea.html">Sale</a>
+						<a href ="">About us</a>
+						<a href ="">Contact us</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</nav>
+				<img src="cart.png" width="30px" height="30px" alt="t.">
+			</div>
+		</div>
+	</div>
+	<h1>
+		GET TO KNOW US!
+	</h1>
+	<div class="categories">
+		<div class="smallp">
+			<div class="row">
+				<h3>
+					We believe in the you. We believe in the environment.
+				</h3>
+				<p>
+					Purple zipper was founded in 2021 with the mission to bring trendy fashion to the world while simultaneously saving the planet. We try to achieve this by only bringing sustainable brands. We only get one planet and we should take care of it as well as our oceans. You can help us help you save the world by purchasing from our carefully selected products that fit the environmentally friendly criteria. All the clothing items are eco-friendly and made with the utmost care. You can be comfortable, look fabulous and save our planet! Start reducing your carbon footprint from today. Make it a lifestyle.
+				</p>
+				<br>
+			</div>
+			<div class="row">
+					<img class="squeeze" src="gbr.png" alt="The great barrier reef.">
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="primaryg">
+			<div class="row">
+				<div class="footerColumnUno">
+						<img src="logo.jpg" alt="Purple zipper logo.">
+				</div>
+				<div class="footerColumnDos">
+					<h3>
+						Find us on social media!
+					</h3>
+				</div>
+				<div class="footerColumnTres">
+					<h3>
+						For more information
+					</h3>
+					<ul>
+						<li>
+							FAQ's
+						</li>
+						<li>
+							About Us
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnQuatro">
+					<h3>
+						Shop
+					</h3>
+					<ul>
+						<li>
+							Men
+						</li>
+						<li>
+							Women
+						</li>
+						<li>
+							Children
+						</li>
+						<li>
+							Accessories
+						</li>
+						<li>
+							Sale
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2021- Purple Zipper. All rights reserved
+			</p>
+		</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
