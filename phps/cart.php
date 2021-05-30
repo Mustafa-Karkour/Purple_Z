@@ -34,7 +34,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-
     <!--Font Awesome-->
     <link
       rel="stylesheet"
@@ -56,6 +55,8 @@
 <body>
 
     <?php require_once("navHeader.php") ?>
+    <link rel="stylesheet" href="../styles/style.css" />
+
 
 
     <div class="container-fluid shopping-cart-section">

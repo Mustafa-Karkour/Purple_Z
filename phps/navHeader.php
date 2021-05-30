@@ -1,3 +1,20 @@
+<!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
+    <!--Website Icon-->
+    <link
+      rel="shortcut icon"
+      href="../images/zipper-icon.png"
+      type="image/x-icon"
+    />
 <header id="header">
 
     <!--Navbar Section Starts-->
@@ -9,7 +26,7 @@
       <div class="container">
         <!--Logo-->
         <!--Replace # with home page .html-->
-        <a href="#" class="navbar-brand mb-0 h1">
+        <a href="../tala/homepage.html" class="navbar-brand mb-0 h1">
           Purple
           <img
             class="d-inline-block"
@@ -37,15 +54,15 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <!--Home page-->
-              <a href="#" class="nav-link">Home</a>
+              <a href="../tala/homepage.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <!--Women page-->
-              <a href="#" class="nav-link">Women</a>
+              <a href="../Fatemah/Women.php" class="nav-link">Women</a>
             </li>
             <li class="nav-item">
               <!--Men page-->
-              <a href="#" class="nav-link">Men</a>
+              <a href="../Fatemah/Men.php" class="nav-link">Men</a>
             </li>
             <li class="nav-item dropdown">
               <!--Products page-->
@@ -64,17 +81,17 @@
                 aria-labelledby="products-dropdown"
               >
                 <li>
-                  <a href="Watches.php" class="dropdown-item">Watches</a>
+                  <a href="../phps/Watches.php" class="dropdown-item">Watches</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item">Bages</a>
+                  <a href="../tala/bag.php" class="dropdown-item">Bages</a>
                 </li>
                
               </ul>
             </li>
             <li class="nav-item">
               <!--New Arrivals page-->
-              <a href="#" class="nav-link">New Arrivals</a>
+              <a href="../Zahraa/All/salea.html" class="nav-link">On Sale</a>
             </li>
           </ul>
 
@@ -85,7 +102,7 @@
          <div>
             <div class="mr-auto">
                 <div class="navbar-nav">
-                    <a href="cart.php" class="nav-item nav-link active">
+                    <a href="../phps/cart.php" class="nav-item nav-link active">
                         <h5 class="cart">
                             <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart -->
                             <img src="../../Project/images/cart.png" width="35px" class="pb-2" alt="cart icon"> Cart
