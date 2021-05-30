@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="Logo mini.png"/>
+	<title>
+		Sale | Purple Zipper
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<?php
+		$sql = "SELECT * FROM product WHERE PROD_IMG = 'zahraa/images/sale';";
+		$result  = mysqli_query($connection, $sql);
+		$resultCheck = mysqli_num_rows($result);
+	?>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<div class="header">
+		<div class="primaryg">
+			<div class="navbar" id="mynavbar">
+				<div class="logo">
+					<img src="logo.jpg" height="125px" alt="Purple zipper logo.">
+				</div>
+				<nav class="">
+					<div class="topnav" id="myTopnav">
+						<a href ="">Home</a>
+						<a href ="">Products</a>
+						<a href ="salea.html">Sale</a>
+						<a href ="aboutUs.html">About us</a>
+						<a href ="">Contact us</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</nav>
+				<img src="cart.png" width="30px" height="30px" alt="t.">
+			</div>
+		</div>
+	</div>
+	<div class="categories">
+		<div class="smallp">
+			<div class="row">
+				<h1>
+					MAN SALE
+				</h1>
+			</div>
+			<div class="row">
+				<div class="columnQuatro">
+					<img src="longCoat.jpeg" alt="Sandy coloured coat.">
+					<h4 class="specialcase">
+						Coat
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							60.00
+						</s>
+						31.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="wideLegTrousers.jpeg" alt="Wide leg navy blue trousers.">
+					<h4 class="specialcase">
+						Trousers
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							41.00
+						</s>
+						15.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="highNeckJumper.jpeg" alt="White high neck jumoer">
+					<h4 class="specialcase">
+						High Neck Jumper
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							30.00
+						</s>
+						22.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="denimJacket.jpeg" alt="Denim jacket.">
+					<h4 class="specialcase">
+						Denim Jacket
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							58.00
+						</s>
+						40.00
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="primaryg">
+			<div class="row">
+				<div class="footerColumnUno">
+						<img src="logo.jpg" alt="Purple zipper logo.">
+				</div>
+				<div class="footerColumnDos">
+					<h3>
+						Find us on social media!
+					</h3>
+				</div>
+				<div class="footerColumnTres">
+					<h3>
+						For more information
+					</h3>
+					<ul>
+						<li>
+							FAQ's
+						</li>
+						<li>
+							About Us
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnQuatro">
+					<h3>
+						Shop
+					</h3>
+					<ul>
+						<li>
+							Men
+						</li>
+						<li>
+							Women
+						</li>
+						<li>
+							Children
+						</li>
+						<li>
+							Accessories
+						</li>
+						<li>
+							Sale
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2021- Purple Zipper. All rights reserved
+			</p>
+		</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>

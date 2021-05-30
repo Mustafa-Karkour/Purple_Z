@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="Logo mini.png"/>
+	<title>
+		Women Sale | Purple Zipper
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<div class="header">
+		<div class="primaryg">
+			<div class="navbar" id="mynavbar">
+				<div class="logo">
+					<img src="logo.jpg" height="125px" alt="Purple zipper logo.">
+				</div>
+				<nav class="">
+					<div class="topnav" id="myTopnav">
+						<a href ="">Home</a>
+						<a href ="">Products</a>
+						<a href ="">Sale</a>
+						<a href ="">About us</a>
+						<a href ="">Contact us</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</nav>
+				<img src="cart.png" width="30px" height="30px" alt="t.">
+			</div>
+		</div>
+	</div>
+	<div class="smallpcart">
+		<table>
+			<tr>
+				<th>
+					Product
+				</th>
+				<th>
+					Quantity
+				</th>
+				<th>
+					Subtotal
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cartel">
+						<img src="yellowFloralPants.jpg" width="500px" alt="">
+						<div>
+							<p>
+								Yellow Floral pants.
+							</p>
+							<small>
+								11.00
+							</small>
+							<a href="">
+								Remove
+							</a>
+						</div>
+					</div>
+				</td>
+				<td>
+					<input type="number" value="1">
+				</td>
+				<td>
+					Price
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="footer">
+		<div class="primaryg">
+			<div class="row">
+				<div class="footerColumnUno">
+						<img src="logo.jpg" alt="Purple zipper logo.">
+				</div>
+				<div class="footerColumnDos">
+					<h3>
+						Find us on social media!
+					</h3>
+				</div>
+				<div class="footerColumnTres">
+					<h3>
+						For more information
+					</h3>
+					<ul>
+						<li>
+							FAQ's
+						</li>
+						<li>
+							About Us
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnQuatro">
+					<h3>
+						Shop
+					</h3>
+					<ul>
+						<li>
+							Men
+						</li>
+						<li>
+							Women
+						</li>
+						<li>
+							Children
+						</li>
+						<li>
+							Accessories
+						</li>
+						<li>
+							Sale
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2021- Purple Zipper. All rights reserved
+			</p>
+		</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>

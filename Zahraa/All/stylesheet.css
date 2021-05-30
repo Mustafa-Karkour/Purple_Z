@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+	display: flex;
+	align-items: center; 
+	padding: 20px;
+	overflow: hidden;
+}
+
+nav {
+	display:flex;
+	flex: 1;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #555555;
+}
+
+p {
+	color: #555555;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.primaryg {
+	max-width:1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.columnDos {
+	flex-basis: 50%;
+	min-width: 300px;
+	text-align: center;
+	margin-left: 0;
+}
+
+.columnDos img {
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.columnDos h1 {
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+
+.button {
+	display: inline-block;
+	background: #E6E6FA;
+	color: #000000;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+
+.button:hover {
+	background: #555555;
+}
+
+
+.header row {
+	margin-top: 70px;
+}
+
+.categories {
+	margin: 70px 0;
+}
+
+.columnTres {
+	flex: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.columnTres img {
+	width: 100%;
+}
+
+.smallg {
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.columnQuatro {
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom:  5px;
+	transition: transform 0.5s;
+}
+
+.columnQuatro img {
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #000000;
+}
+
+.title::after {
+	content: '';
+	background: #E6E6FA;
+	width: 80px;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h4 {
+	color: #555555;
+	font-weight: normal;
+}
+
+.columnQuatro p {
+	font-size: 14px;
+}
+
+.columnQuatro:hover {
+	transform: translateY(-5px);
+}
+
+.footer {
+	background: #000000;
+	color: #8A8A8A;
+	font-size: 14px;
+	padding: 60px 0 20px;
+ }
+
+.footer p {
+	color: #8A8A8A;
+}
+
+.footer h3 {
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.footerColumnUno, .footerColumnDos, .footerColumnTres, .footerColumnQuatro {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+.footerColumnUno {
+	flex: 1;
+	text-align: center;
+}
+
+.footerColumnUno img {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footerColumnDos {
+	flex-basis: 30%;
+}
+
+.footerColumnTres, .footerColumnQuatro {
+	flex-basis: 12%;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.footer hr {
+	border: none;
+	background: #B5B5B5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.menu-icon {
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.topnav a {
+	float: left;
+	color: #F2F2F2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	margin-left: 80px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: #000000;
+}
+
+.topnav a.active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #E6E6FA;
+	color: #000000;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+#myBtn:hover {
+	background-color: #555555;
+}
+
+.smallpcart {
+	margin: 80px auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cartel {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+th {
+	text-align:left;
+	padding: 5px;
+	color: #FFFFFF;
+	background: #000000;
+	font-weight: normal;
+}
+
+td {
+	padding: 10px 5px;
+}
+
+td input{
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+}
+
+td a{
+	color: #FF0000;
+	font-size: 12px;
+}
+
+.squeeze {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.through {
+	text-align: left;
+}
+
+.specialcase {
+	color: #000000;
+	text-align: center;
+}

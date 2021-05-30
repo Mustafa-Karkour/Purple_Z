@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="Logo mini.png"/>
+	<title>
+		Sale | Purple Zipper
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<?php
+		$sql = "SELECT * FROM product WHERE PROD_IMG = 'zahraa/images/sale';";
+		$result  = mysqli_query($connection, $sql);
+		$resultCheck = mysqli_num_rows($result);
+	?>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<div class="header">
+		<div class="primaryg">
+			<div class="navbar" id="mynavbar">
+				<div class="logo">
+					<img src="logo.jpg" height="125px" alt="Purple zipper logo.">
+				</div>
+				<nav class="">
+					<div class="topnav" id="myTopnav">
+						<a href ="">Home</a>
+						<a href ="">Products</a>
+						<a href ="salea.html">Sale</a>
+						<a href ="aboutUs.html">About us</a>
+						<a href ="">Contact us</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</nav>
+				<img src="cart.png" width="30px" height="30px" alt="t.">
+			</div>
+		</div>
+	</div>
+	<div class="categories">
+		<div class="smallp">
+			<div class="row">
+				<h1>
+					WATCHES & BAGS SALE
+				</h1>
+			</div>
+			<div class="row">
+				<div class="columnQuatro">
+					<img src="apGold.jpeg" alt="Ap Royal Oak Gold Watch.">
+					<h4 class="specialcase">
+						AP Gold Royal Oak
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							83,000.00
+						</s>
+						81,000.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="greenBag.jpeg" alt="Green cross body bag.">
+					<h4 class="specialcase">
+						Green Bag
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							35.00
+						</s>
+						11.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="hikingBackpack.jpeg" alt="Hiking backpack.">
+					<h4 class="specialcase">
+						Hiking Backpack
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							50.00
+						</s>
+						35.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="cartierWatch.jpeg" alt="Ballon bleu de Cartier watch.">
+					<h4 class="specialcase">
+						Ballon Bleu De Cartier
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							12,000.00
+						</s>
+						10,000.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="apSilver.jpeg" alt="Ap Royal Oak Silver Watch.">
+					<h4 class="specialcase">
+						AP Silver Royal Oak
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							83,000.00
+						</s>
+						81,000.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="rolexWatch.jpeg" alt="A rolex watch.">
+					<h4 class="specialcase">
+						Rolex Watch
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							8,000.00
+						</s>
+						6,000.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="snakeBag.jpeg" alt="Faux snake skin cross body bag.">
+					<h4 class="specialcase">
+						Faux Snake Skin Bag
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							17.00
+						</s>
+						6.00
+					</p>
+				</div>
+				<div class="columnQuatro">
+					<img src="suitCarrier.jpeg" alt="A suit carrying bag.">
+					<h4 class="specialcase">
+						Suit Carrier
+					</h4>
+					<p class = "speicalcase">
+						<s>
+							15.00
+						</s>
+						7.00
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="primaryg">
+			<div class="row">
+				<div class="footerColumnUno">
+						<img src="logo.jpg" alt="Purple zipper logo.">
+				</div>
+				<div class="footerColumnDos">
+					<h3>
+						Find us on social media!
+					</h3>
+				</div>
+				<div class="footerColumnTres">
+					<h3>
+						For more information
+					</h3>
+					<ul>
+						<li>
+							FAQ's
+						</li>
+						<li>
+							About Us
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnQuatro">
+					<h3>
+						Shop
+					</h3>
+					<ul>
+						<li>
+							Men
+						</li>
+						<li>
+							Women
+						</li>
+						<li>
+							Children
+						</li>
+						<li>
+							Accessories
+						</li>
+						<li>
+							Sale
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2021- Purple Zipper. All rights reserved
+			</p>
+		</div>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
