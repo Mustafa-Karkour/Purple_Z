@@ -12,18 +12,20 @@ $p_email = $_COOKIE["p_email"]; //the email is unquie
 $f_name = $_COOKIE["f_name"];
 $l_name = $_COOKIE["l_name"];
 
+//-----------For Address Class----------------
+  $address_line = $_COOKIE["address_line"];
+  $address_area = $_COOKIE["address_area"];
+  $country_code = $_COOKIE["country_code"];
+  $postal_code = $_COOKIE["postal_code"]; 
+  //---------------------------
+
 $customerInfo = new CustomerInfo($p_email,$f_name,$l_name);
 if(!$customerInfo->customerAvailability()){
   //new customer
   $customerInfo->insertCustomerInfo(); 
 
   /** ADDRESSINFO CLASS Section Starts*/
-  //---------------------------
-  $address_line = $_COOKIE["address_line"];
-  $address_area = $_COOKIE["address_area"];
-  $country_code = $_COOKIE["country_code"];
-  $postal_code = $_COOKIE["postal_code"]; 
-  //---------------------------
+  
   $addressInfo = new AddressInfo("Salmiya","HolidyInn","KW",2022);
   $addressInfo->insertAddressInfo($customerInfo->cus_email); 
   
