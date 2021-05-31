@@ -78,19 +78,25 @@
     /> -->
     <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
     <!--Website Icon-->
-    <!-- <link
+    <link
       rel="shortcut icon"
       href="../images/zipper-icon.png"
       type="image/x-icon"
-    /> -->
+    />
   </head>
   <body>
     <!--Navbar Section Starts-->
-    <?php require_once("navHeader.php") ?>
+    <?php require_once("./navHeader.php"); ?>
     <!--Navbar Section Ends-->
+
+  
+ 
+
+
     <link rel="stylesheet" href="../styles/style.css" />
+    
 
-
+    
     <!--Watches Section Starts-->
     <!--Container for all products Starts-->
     <div class="container my-5 pt-5">

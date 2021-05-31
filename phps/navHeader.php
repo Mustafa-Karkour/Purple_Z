@@ -26,7 +26,7 @@
       <div class="container">
         <!--Logo-->
         <!--Replace # with home page .html-->
-        <a href="../tala/homepage.html" class="navbar-brand mb-0 h1">
+        <a href="../tala/homepage.php" class="navbar-brand mb-0 h1">
           Purple
           <img
             class="d-inline-block"
@@ -54,7 +54,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <!--Home page-->
-              <a href="../tala/homepage.html" class="nav-link">Home</a>
+              <a href="../tala/homepage.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <!--Women page-->

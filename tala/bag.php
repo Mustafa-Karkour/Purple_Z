@@ -47,7 +47,7 @@ if(!$con){
 
 
             <div class="col-4" style="padding-bottom: 25px">
-                <img width="150px" height="350px" src=".././<?php echo $prod_IMG; ?>">
+                <img width="150px" height="600px" src=".././<?php echo $prod_IMG; ?>">
                 <h4><?php echo $prod_NAME; ?></h4>
                 <p><?php echo $prod_DESC; ?></p>
                 <p><?php echo $prod_PRICE. " KD" ?></p>
