@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--Link here for putting mini logo in the left corner of the tab-->
 	<link rel="shortcut icon" href="Logo mini.png"/>
 	<title>
-		Sale | Purple Zipper
+		Women Sale | Purple Zipper
 	</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Link tag links the stylesheet to the page-->
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-	<?php
-		$sql = "SELECT * FROM product WHERE PROD_IMG = 'zahraa/images/sale';";
-		$result  = mysqli_query($connection, $sql);
-		$resultCheck = mysqli_num_rows($result);
-	?>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<script>
-		//Creates a back to top button for automatic scrolling to the top
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
 
@@ -81,130 +73,46 @@
 			</div>
 		</div>
 	</div>
-	<div class="categories">
-		<div class="smallp">
-			<div class="row">
-				<h1>
-					WOMAN SALE
-				</h1>
-			</div>
-			<div class="row">
-				<div class="columnQuatro">
-					<a href="cartyfp.html">
-						<img src="yellowFloralPants.jpg" alt="Yellow baggy pants with a floral pattern.">
-					</a>
-					<h4 class="specialcase">
-							Yellow Floral Pants
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							45.00
-						</s>
-						19.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartgct.html">
-						<img src="greenCropTop.jpg" alt="Green frilled crop top.">
-					</a>
-					<h4 class="specialcase">
-						Green Frilled Crop Top
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							30.00
-						</s>
-						15.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartwlj.html">
-						<img src="wideLegJeans.jpg" alt="Wide leg light-wash jeans.">
-					</a>
-					<h4 class="specialcase">
-						Wide Leg Jeans
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							54.00
-						</s>
-						37.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartwk.html">
-						<img src="whiteKimono.jpeg" alt="White kimono.">
-					</a>
-					<h4 class="specialcase">
-						White Kimono
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							25.00
-						</s>
-						17.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartpt.html">
-						<img src="pinkTshirt.jpg" alt="Basic pink t-shirt.">
-					</a>
-					<h4 class="specialcase">
-						Pink T-shirt
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							15.00
-						</s>
-						9.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartoj.html">
-						<img src="orangePinkJumpsuit.jpg" alt="An orangey pinkish jumpsuit.">
-					</a>
-					<h4 class="specialcase">
-						Orange Jumpsuit
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							50.00
-						</s>
-						42.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="carttc.html">
-						<img src="trenchCoat.jpg" alt="Beige trench coat.">
-					</a>
-					<h4 class="specialcase">
-						Trench Coat
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							70.00
-						</s>
-						53.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<a href="cartbb.html">
-						<img src="blackBlazer.jpeg" alt="Black blazer.">
-					</a>
-					<h4 class="specialcase">
-						Black Blazer
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							28.00
-						</s>
-						12.00
-					</p>
-				</div>
-			</div>
-		</div>
+	<div class="smallpcart">
+		<table>
+			<tr>
+				<th>
+					Product
+				</th>
+				<th>
+					Quantity
+				</th>
+				<th>
+					Price per piece
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cartel">
+						<img src="whiteKimono.jpeg" height="200px" alt="">
+						<div>
+							<p>
+								White Kimono.
+							</p>
+							<a href="">
+								Remove
+							</a>
+							<br>
+							<a href="saleva.html" class="button">
+								Add to cart
+							</a>
+						</div>
+					</div>
+				</td>
+				<td>
+					<input type="number" value="1">
+				</td>
+				<td>
+					17.00
+				</td>
+			</tr>
+		</table>
 	</div>
-	<!--Footer here is coded with the sections divided by columns.-->
 	<div class="footer">
 		<div class="primaryg">
 			<div class="row">
