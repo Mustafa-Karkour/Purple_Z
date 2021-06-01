@@ -157,5 +157,111 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../scripts/watches.js"></script>
+    <!----------------------------------------------- Footer -------------------------------------------------------------->
+   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <footer class="bg-light text-center text-lg-start">
+   <!---Grid container--> 
+  <div class="container p-4">
+    <!-- Grid row-->
+    <div class="row">
+     <!-- Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Company</u></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">About us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Our Services</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Affiliate Program</a>
+          </li>
+        </ul>
+      </div>
+      
+
+     <!-- Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0"><u>Get Help</u></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">FAQ</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Shipping</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Returns</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Order Status</a>
+          </li>
+                  <li>
+            <a href="#!" class="text-dark">Payment Options</a>
+          </li>
+
+        </ul>
+      </div>
+     <!-- Grid column-->
+
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Online Shop</u></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Watch</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Women</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Men</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">New Arrivals</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- <h5 class="text-uppercase"><u>Follow Us</u></h5>
+      <section class="mb-4"> -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Follow us</u></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+           YouTube  
+      <i class="fa fa-youtube-square" aria-hidden="true" style='font-size:10px'></i>
+          </li>
+          <li>
+            Github 
+     <i class="fa fa-github-square" aria-hidden="true" style='font-size:10px'></i>
+          </li>
+          
+        </ul>
+      </div>
+      
+       <!-- YouTube  
+      <i class="fa fa-youtube-square" aria-hidden="true" style='font-size:10px'></i> -->
+
+     
+     
+       <!-- Github 
+     <i class="fa fa-github-square" aria-hidden="true" style='font-size:10px'></i> -->
+    </section>
+      </div>
+    
+   <div style="text-align: center;">Copyright © 2021 CSIS255: <a class="text-dark" href="https://auk.edu.kw/">auk.edu.kw</a></div>
+    
+
+  
+</footer>
   </body>
 </html>
