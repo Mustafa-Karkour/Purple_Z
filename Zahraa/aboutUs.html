@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	//Link here for putting mini logo in the left corner of the tab
 	<link rel="shortcut icon" href="Logo mini.png"/>
 	<title>
-		Sale | Purple Zipper
+		About Us | Purple Zipper
 	</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	//Link tag links the stylesheet to the page
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-	<?php
-		$sql = "SELECT * FROM product WHERE PROD_IMG = 'zahraa/images/sale';";
-		$result  = mysqli_query($connection, $sql);
-		$resultCheck = mysqli_num_rows($result);
-	?>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<script>
+		//Creates a back to top button for automatic scrolling to the top
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
 
@@ -43,81 +41,61 @@
 				<div class="logo">
 					<img src="logo.jpg" height="125px" alt="Purple zipper logo.">
 				</div>
-				<nav class="">
+				<nav>
+					//Navigation section, allows to to move between different pages
 					<div class="topnav" id="myTopnav">
-						<a href ="">Home</a>
-						<a href ="">Products</a>
-						<a href ="salea.html">Sale</a>
-						<a href ="aboutUs.html">About us</a>
-						<a href ="">Contact us</a>
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-									<i class="fa fa-bars"></i>
-						</a>
+						<a href="homepage.html" class="active">Home</a>
+						<div class="dropdown">
+							<button class="dropbtn">Products
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<a href="Men.php">Men</a>
+								<a href="Women.php">Woman</a>
+								<a href="bagpage.html">Bags</a>
+								<a href="Watches.php">Watches</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Sale
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<a href="salem.html">Men</a>
+								<a href="salew.html">Woman</a>
+								<a href="salewb.html">Watches & Bags</a>
+								<a href="saleva.html">View all</a>
+							</div>
+						</div>
+						<a href="aboutUs.html" class="active">About us</a>
+						<a href="#about" class="active">Contact us</a>
+						<a href="javascript:void(0);" class="icon" onclick="myNav()">&#9776;</a>
 					</div>
 				</nav>
 				<img src="cart.png" width="30px" height="30px" alt="t.">
 			</div>
 		</div>
 	</div>
+	<h1>
+		GET TO KNOW US!
+	</h1>
 	<div class="categories">
 		<div class="smallp">
 			<div class="row">
-				<h1>
-					MAN SALE
-				</h1>
+				<h3>
+					We believe in the you. We believe in the environment.
+				</h3>
+				<p>
+					Purple zipper was founded in 2021 with the mission to bring trendy fashion to the world while simultaneously saving the planet. We try to achieve this by only bringing sustainable brands. We only get one planet and we should take care of it as well as our oceans. You can help us help you save the world by purchasing from our carefully selected products that fit the environmentally friendly criteria. All the clothing items are eco-friendly and made with the utmost care. You can be comfortable, look fabulous and save our planet! Start reducing your carbon footprint from today. Make it a lifestyle.
+				</p>
+				<br>
 			</div>
 			<div class="row">
-				<div class="columnQuatro">
-					<img src="longCoat.jpeg" alt="Sandy coloured coat.">
-					<h4 class="specialcase">
-						Coat
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							60.00
-						</s>
-						31.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<img src="wideLegTrousers.jpeg" alt="Wide leg navy blue trousers.">
-					<h4 class="specialcase">
-						Trousers
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							41.00
-						</s>
-						15.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<img src="highNeckJumper.jpeg" alt="White high neck jumoer">
-					<h4 class="specialcase">
-						High Neck Jumper
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							30.00
-						</s>
-						22.00
-					</p>
-				</div>
-				<div class="columnQuatro">
-					<img src="denimJacket.jpeg" alt="Denim jacket.">
-					<h4 class="specialcase">
-						Denim Jacket
-					</h4>
-					<p class = "speicalcase">
-						<s>
-							58.00
-						</s>
-						40.00
-					</p>
-				</div>
+					<img class="squeeze" src="gbr.png" alt="The great barrier reef.">
 			</div>
 		</div>
 	</div>
+	//Footer here is coded with the sections divided by columns.
 	<div class="footer">
 		<div class="primaryg">
 			<div class="row">
@@ -172,6 +150,15 @@
 		</div>
 	</div>
 	<script>
+		//Javascript function to make nav responsive
+		function myNav() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
 		function myFunction() {
 			var x = document.getElementById("myTopnav");
 			if (x.className === "topnav") {
