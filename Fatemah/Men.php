@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -80,17 +79,22 @@ i{
 
     <meta charset="UTF-8">
          <title>Bootstrap Example</title>
+         <!--Navbar Section Starts-->
+    <?php require_once("../phps/navHeader.php"); ?>
+    <!--Navbar Section Ends-->
+    <link rel="stylesheet" href="../styles/style.css" />
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 </head>
-    </head>
     
-    <body>
     
-<nav class="navbar navbar-default">
+   <body style="background-color: white;">    
+<!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
      <a class="navbar-brand" href="#">Purple Z</a>
@@ -115,7 +119,14 @@ i{
     </ul>
     
   </div>
-</nav>
+</nav> -->
+
+<h2 style="margin-top: 100px; text-align: center;">Men Collection</h2>
+
+    
+
+
+
          <p id="rcorners2">
          <div class="card">
 <?php
@@ -129,6 +140,7 @@ if(!$con){
     $rowNo=0;
 ?>
     </div>
+    
         <table width="100%">
 <?php
     While($row=mysqli_fetch_assoc($rst)){
@@ -145,17 +157,24 @@ if(!$con){
              <tr height="500px">
         <?php } ?>
                    <td>
-                     <div class="col-4">
-                <div class="card mt-3">
-                <img width="350px" height="350px" src="<?php echo $prod_IMG; ?>">
+                     <div class="">
+                <div class="card" style="margin-top: 100px; border:none;">
+                <img width="300px" height="350px" src="<?php echo $prod_IMG; ?>">
                 <h4><?php echo $prod_NAME; ?></h4>
                 <p><?php echo $prod_DESC; ?></p>
                 <p><?php echo $prod_PRICE. " KD" ?></p>
-                <span class="fa fa-star checked"></span>
+                <!-- <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span> -->
+             <div class="container mb-2">
+               <span class="fa fa-star checked"></span>
                <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
            <span class="fa fa-star"></span>
              <span class="fa fa-star"></span>
+             </div>
              <p><button>Add to Cart</button></p>
             </div>
             </div> 
@@ -241,23 +260,39 @@ if(!$con){
         </ul>
       </div>
       
-      <h5 class="text-uppercase"><u>Follow Us</u></h5>
-      <section class="mb-4">
-          
-      
-       YouTube  
+      <!-- <h5 class="text-uppercase"><u>Follow Us</u></h5>
+      <section class="mb-4"> -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><u>Follow us</u></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+           YouTube  
       <i class="fa fa-youtube-square" aria-hidden="true" style='font-size:10px'></i>
+          </li>
+          <li>
+            Github 
+     <i class="fa fa-github-square" aria-hidden="true" style='font-size:10px'></i>
+          </li>
+          
+        </ul>
+      </div>
+      
+       <!-- YouTube  
+      <i class="fa fa-youtube-square" aria-hidden="true" style='font-size:10px'></i> -->
 
      
      
-       Github 
-     <i class="fa fa-github-square" aria-hidden="true" style='font-size:10px'></i>
+       <!-- Github 
+     <i class="fa fa-github-square" aria-hidden="true" style='font-size:10px'></i> -->
     </section>
       </div>
-   Copyright © 2021 CSIS255:
-    <a class="text-dark" href="https://auk.edu.kw/">auk.edu.kw</a>
+    
+   <div style="text-align: center;">Copyright © 2021 CSIS255: <a class="text-dark" href="https://auk.edu.kw/">auk.edu.kw</a></div>
     
 
   
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
         
