@@ -91,7 +91,7 @@
             </li>
             <li class="nav-item">
               <!--New Arrivals page-->
-              <a href="../Zahraa/All/salea.html" class="nav-link">On Sale</a>
+              <a href="../Zahraa/salea.html" class="nav-link">On Sale</a>
             </li>
           </ul>
 
