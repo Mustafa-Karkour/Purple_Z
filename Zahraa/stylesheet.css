@@ -246,6 +246,10 @@ ul {
 	margin: 80px auto;
 }
 
+.arabey {
+	text-align: center;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -254,6 +258,7 @@ table {
 .cartel {
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
 }
 
 /* Table heading size and layout being set */
